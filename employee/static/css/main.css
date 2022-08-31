@@ -1,0 +1,84 @@
+
+body{
+    /* background-color: #232730; */
+    background-color: whitesmoke;
+}
+
+.navbar{
+    background-color: #232730;
+    color: beige;
+}
+
+/* .home{
+    background-image: url('../images/starte.png');
+    background-position: right;
+    margin-right: 20%;
+    background-size: 50%;
+    background-repeat:no-repeat;
+} */
+
+
+.left{
+    /* background-color: aquamarine; */
+    min-height: 500px;
+    text-align: right;
+
+}
+
+.right{
+    /* background-color: blueviolet; */
+    min-height: 500px;
+    background-repeat: no-repeat;
+    text-align: right;
+}
+
+.signup-left{
+    color: beige;
+    align-items: center;
+}
+.register{
+    min-height: 500px;
+}
+
+.login{
+    /* background-image: url('../images/bg-2.svg'); */
+    min-height: 500px;
+    /* width: 100%;
+    height: 100%;
+    background-repeat: no-repeat; */
+}
+.button{
+    background-color: #fe6601;
+    color: beige;
+}
+
+.heading{
+    color: #fe6601;
+}
+
+#footer{
+    background-color: #232730;
+    text-align: center;
+    color: beige;
+}
+
+.profile{
+    min-height: 500px;
+}
+
+.admin-heading{
+    text-align: center;
+    /* background-color: aqua; */
+    min-height: 50px;
+}
+.admin-home{
+    min-height: 600px;
+}
+.card{
+    /* width: 350px; */
+    background-color: #efefef;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s
+}
+

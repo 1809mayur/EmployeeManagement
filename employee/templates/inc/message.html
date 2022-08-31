@@ -1,0 +1,25 @@
+
+{% with messages = get_flashed_messages(with_categories = true) %}
+    
+    {% if messages %}
+      <!-- Categories: success (green), info (blue), warning (yellow), danger (red) -->
+        {% for category, message in messages %}
+
+            <div class="alert alert-{{category}} alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"  aria-label="pl-4 close">
+                    <!-- <span aria-hidden="True">&times;</span> -->
+                </button>
+                {% if category == 'danger' %}
+                    <strong>ERROR: </strong>{{message}}
+                {% elif category == 'success'%}
+                    <strong>SUCCESS: </strong>{{message}}
+                {% elif category == 'warning'%}
+                    <strong>WARNING: </strong>{{message}}
+                {% else%}
+                    {{message}}
+                {% endif%}
+            </div>
+        
+        {% endfor%}
+    {% endif%}
+{% endwith%}

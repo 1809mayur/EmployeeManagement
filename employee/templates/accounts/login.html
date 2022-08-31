@@ -1,0 +1,57 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+<!-- <div class="container-fluid"> -->
+
+    <div class="container login mt-4 pt-5">
+        <div class="row mt-4">
+            <div class="col-lg-5 col-md-6 m-auto card p-4">
+              <form action="{{ url_for('login')}}"  method="POST">
+                  {{loginForm.csrf_token()}}
+                  <div class="text-center">
+                    <h2 class="text heading">EMPLOYEE SIGN-IN FORM</h2>
+                    <h5 class="text heading">SIGN-IN</h5>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    {{loginForm.email(class="form-control",placeholder="Email Address")}}
+                  </div>
+
+                  <div class="form-group mb-3">
+                    {{loginForm.password(class="form-control",placeholder="Password")}}
+                  </div>
+
+                  <div class="d-grid gap-2">
+                    <!-- <button type="submit" class="btn btn-accent mb-3 button"> SIGN-IN </button> -->
+                    {{loginForm.submit(class="btn mb-3 button")}}
+                    </div>
+
+          
+                <p>  
+                    New here?
+                    <a href="{{ url_for('register') }}">Create account</a>
+                </p>
+              </form>
+            </div>
+        </div>
+      </div>
+
+    <!-- <div class="container">
+        
+        <form action="./login" method="POST" class>
+            {{ loginForm.csrf_token }}
+            {{loginForm.email.label}}
+            {{loginForm.email(class="form-control")}}
+
+            {{loginForm.password.label}}
+            {{loginForm.password(class="form-control")}}
+
+            {{loginForm.submit(class="btn btn-lg btn-primary")}}
+            
+        </form>
+    </div> -->
+<!-- </div> -->
+
+
+{% endblock %}

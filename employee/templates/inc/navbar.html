@@ -1,0 +1,17 @@
+
+
+<nav class="navbar">
+    <div class="container-fluid">
+        
+        <a class="nav-link h5 text-light" href="{{ url_for('home') }}">EMPLOYEE TRACKER</a>
+        <div class="header-buttons col-md-6 d-flex justify-content-end">
+            {% if current_user.is_authenticated %}
+                <a class="btn button" href = "{{ url_for('logout') }}" role="button">logout</a>
+            {% else %}
+                <a class="btn button mx-3" href = "{{ url_for('register') }}" role="button">signup</a>
+                <a class="btn button" href = "{{ url_for('login') }}" role="button">signin</a>
+            {% endif %}
+        </div>
+    </div>
+    
+</nav>

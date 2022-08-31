@@ -1,0 +1,27 @@
+version: '3.7'
+services:
+  web:
+    container_name: employee_app
+    # build: .
+    image: app
+    restart: always
+    ports:
+      - 5000:5000
+    environment:
+      - debug=0
+    command: python ./run.py
+    depends_on:
+      - sqlite3
+  sqlite3:
+    container_name: web_app
+    image: nouchka/sqlite3:latest
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./data/db/sqlite3:/root/db
+      #Modify following line
+      # - path-to/your/databases/sqlite3:/root/db/
+      # - ./employeeDatasqlite3:/root/db/
+    ports:
+      - '9000:9000' # expose ports - HOST:CONTAINER
+    restart: unless-stopped

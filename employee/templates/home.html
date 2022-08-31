@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid home">
+    <div class="row">
+        <div class="col-lg-6 mt-5 pt-5 left">
+            <h3 class="mt-5 pt-5 mx-5">Start Your Journey <br>with us</h3>
+            <a class="btn button mx-5" href = "register" role="button">Let's Start</a>
+            <!-- <img src = "{{ url_for('static', filename='./images/starte.png')}} " height="100%" width="100%"> -->
+        </div>
+        <div class="col-lg-6 right">
+            <!-- <h3 class="mt-5 pt-5">Start Your Journey <br>with us</h3>
+            <a class="btn btn-primary" href = "register" role="button">Let's Start</a> -->
+            <img src = "{{ url_for('static', filename='./images/starte.png')}} " height="100%" width="100%">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
