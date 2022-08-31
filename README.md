@@ -79,6 +79,9 @@
 #### PROFILE : 
 <img src="./employee/static/images/profile.png">
 
+#### EMPLOYEE DETAILS
+<img src="./employee/static/images/employeeDetails.png">
+
 #### HOME : 
 <img src="./employee/static/images/home.png">
 
