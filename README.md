@@ -76,10 +76,13 @@
 #### LOGIN :
 <img src="./employee/static/images/login.png">
 
+#### REGISTRATION :
+<img src="./employee/static/images/registration.png">
+
 #### PROFILE : 
 <img src="./employee/static/images/profile.png">
 
-#### EMPLOYEE DETAILS
+#### EMPLOYEE DETAILS :
 <img src="./employee/static/images/employeeDetails.png">
 
 #### HOME : 
